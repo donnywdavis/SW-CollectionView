@@ -69,14 +69,46 @@
 		41A70D021CF614CF00CA7D03 /* SW-CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				41A70D031CF614CF00CA7D03 /* AppDelegate.swift */,
-				41A70D051CF614CF00CA7D03 /* ViewController.swift */,
-				41A70D071CF614CF00CA7D03 /* Main.storyboard */,
-				41A70D0A1CF614CF00CA7D03 /* Assets.xcassets */,
-				41A70D0C1CF614CF00CA7D03 /* LaunchScreen.storyboard */,
-				41A70D0F1CF614CF00CA7D03 /* Info.plist */,
+				41A70D181CF6165300CA7D03 /* Models */,
+				41A70D171CF6164C00CA7D03 /* Controllers */,
+				41A70D161CF6164500CA7D03 /* Views */,
+				41A70D151CF6163900CA7D03 /* Supporting Files */,
 			);
 			path = "SW-CollectionView";
+			sourceTree = "<group>";
+		};
+		41A70D151CF6163900CA7D03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41A70D0A1CF614CF00CA7D03 /* Assets.xcassets */,
+				41A70D0F1CF614CF00CA7D03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41A70D161CF6164500CA7D03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41A70D071CF614CF00CA7D03 /* Main.storyboard */,
+				41A70D0C1CF614CF00CA7D03 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		41A70D171CF6164C00CA7D03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41A70D031CF614CF00CA7D03 /* AppDelegate.swift */,
+				41A70D051CF614CF00CA7D03 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		41A70D181CF6165300CA7D03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		BE11D2C0E8FD584A2BB4A35F /* Pods */ = {
