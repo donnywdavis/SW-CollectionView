@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Starjhol.ttf">
+            <string>StarJediHollow</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,7 +21,26 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="M7D-3w-1Nn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="star wars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-xH-gNi">
+                                <rect key="frame" x="175" y="268" width="251" height="64"/>
+                                <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="40"/>
+                                <color key="textColor" red="0.8980392157" green="0.69411764710000001" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zXg-xH-gNi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CoR-Lt-LdD"/>
+                            <constraint firstAttribute="trailing" secondItem="M7D-3w-1Nn" secondAttribute="trailing" id="IEu-ws-hhR"/>
+                            <constraint firstItem="zXg-xH-gNi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xn0-0s-vF0"/>
+                            <constraint firstItem="M7D-3w-1Nn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ZyQ-zk-nvU"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="M7D-3w-1Nn" secondAttribute="bottom" id="chy-U3-Dti"/>
+                            <constraint firstItem="M7D-3w-1Nn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lwc-6H-wo6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +48,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="1242" height="2208"/>
+    </resources>
 </document>
